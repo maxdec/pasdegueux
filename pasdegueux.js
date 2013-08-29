@@ -106,7 +106,11 @@
     keyword = keyword.trim();
     document.title = keyword.toUpperCase() + ' ? PAS DEGUEUX';
     input.value = keyword;
-    google.setOnLoadCallback(search);
+    if (keyword === 'baptou') {
+      randImg();
+    } else {
+      google.setOnLoadCallback(search);
+    }
   } else {
     randImg();
   }
