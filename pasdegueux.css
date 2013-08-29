@@ -1,0 +1,82 @@
+body {
+  height: 100%;
+  background: black;
+  color: white;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#vignette,
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#background {
+  background: transparent no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#vignette {
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.4);
+}
+
+#label {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#background img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#label,
+#label input {
+  text-transform: uppercase;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 1.1em;
+}
+
+#label input {
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  height: 1.1em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#label input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#label input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#social {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#paypal {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -3px;
+}
