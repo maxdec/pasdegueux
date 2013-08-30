@@ -60,7 +60,7 @@
   }
 
   function randImg() {
-    var nb = Math.floor((Math.random()*5)+1);
+    var nb = Math.floor((Math.random()*13)+1);
     var url = 'http://pasdegueux.com/img/'+nb+'.jpg';
     bg.style.backgroundImage = 'url('+url+')';
   }
