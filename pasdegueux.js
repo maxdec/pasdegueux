@@ -60,9 +60,13 @@
   }
 
   function randImg() {
-    var nb = Math.floor((Math.random()*13)+1);
+    var nb = Math.floor((Math.random()*12)+1);
     var url = 'http://pasdegueux.com/img/'+nb+'.jpg';
     bg.style.backgroundImage = 'url('+url+')';
+  }
+
+  function notFound() {
+    bg.style.backgroundImage = 'url(http://pasdegueux.com/img/404.jpg)';
   }
 
   function search() {
@@ -92,7 +96,7 @@
       searcher.clearResults();
     } else {
       console.log('No results.');
-      randImg();
+      notFound();
     }
   }
 
